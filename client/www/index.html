@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en" ng-app="trip-planner"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" ng-app="trip-planner"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Trip Planner</title>
+
+    <link rel="stylesheet" href="assets/css/base.css" media="screen"/>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/leaflet.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+<div id="toggle" ng-click="$menu.toggle()">
+    MENU
+</div>
+
+
+<div id="header">
+    <form ng-controller="InputController">
+        From: <input type="text" name="from" ng-model="Plan.from">
+        To: <input type="text" name="to" ng-model="Plan.to">
+        <button ng-click="plan()">Plan Trip</button>
+
+        <pre ng-bind="Plan.results"></pre>
+    </form>
+</div>
+
+<div id="map" ng-controller="MapController"></div>
+
+
+<div id="footer">
+    Foot
+</div>
+
+
+<script src="assets/js/vendor.min.js"></script>
+<script src="assets/js/code.js"></script>
+
+</body>
+</html>

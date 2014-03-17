@@ -1,0 +1,20 @@
+{
+  "name": "grunt-hub for xxxx project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-text-replace": "~0.3.10",
+    "grunt-hub": "~0.5.0"
+  },
+  "dependencies": {
+  },
+  "replacements": {
+    "use": "dev",
+    "dev": {
+      "host": "http://localhost:4343"
+    },
+    "prod": {
+      "host": "https://somehost.com"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "meantemp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "mongoose": "~3.6.15",
+    "underscore": "~1.5.2",
+    "socket.io": "~0.9.16"
+  },
+  "readmeFilename": "README.md",
+  "description": "Technology ------------",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-express-server": "~0.4.11",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gs",
+    "user"
+  ],
+  "author": "Skip Rotter",
+  "license": "MIT"
+}
